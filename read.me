@@ -1,4 +1,5 @@
-n PHPStorm als neues Projekt angelegt
+In PHPStorm als neues Projekt angelegt
+
 git init
 vim read.me
 git status
@@ -7,15 +8,24 @@ git commit -m "init"
 git remote add origin https://github.com/jansulzberger/Tutorial-Symfoni-Create-Project.git
 git branch -M main
 git push -u origin main
+
+Git ist jetzt eingerichtet
+
 symfony new App
+
 Problem der Unterordner
+
 cd App
 sudo rm -r .git
 mv * ../
-ls -l
-Wenn Ordner frei dann weiter, sonst die Datei und Ordner noch eine Ebene hoch moven
+ls -la
+mv .env ../
+mv .gitignore ../
 cd..
 rm -r App
+
+Saubere Struktur
+
 git add .
 git commit -m "Folder clean up"
 git push
